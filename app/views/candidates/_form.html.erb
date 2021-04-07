@@ -1,0 +1,24 @@
+<%= form_for (candidate) do |f| %>
+  
+  <div>
+    <%= f.label :name, "姓名:"%>
+    <%= f.text_field :name %>
+  </div>
+
+  <div>
+    <%= f.label :age, "年齡:" %>
+    <%= f.text_field :age %>
+  </div>
+  
+  <div>
+    <%= f.label :political_party, "政黨:" %>
+    <%= f.text_field :political_party %>
+  </div>
+  
+  <div>
+    <%= f.label :politics, "政見:" %>
+    <%= f.text_field :politics %>
+  </div>
+  
+  <div><%= f.submit %></div>
+<% end %>
